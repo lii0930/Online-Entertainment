@@ -1,0 +1,43 @@
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  z-index: 1;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+
+.owl-theme .owl-nav [class*=owl-] {
+  transition: all 0.3s;
+  font-size: 2rem;
+  color: #333;
+  opacity: 0.5;
+  padding: 0;
+  line-height: 1;
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+  opacity: 1;
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev {
+    top: auto;
+    transform: translateY(0);
+    bottom: 0;
+  }
+}
